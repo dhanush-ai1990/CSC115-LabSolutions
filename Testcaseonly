@@ -1,0 +1,74 @@
+public static void main(String[] args) 
+	{
+		Rectangle r1 = new Rectangle(3,4);
+		RectList rList = new RectList();
+		// Add some rectangles to the front:
+		//-============Remove When list is empty=============================
+		System.out.println("-----------------------------------------------------------");
+		System.out.println("Before remove");
+		System.out.println("head is " +rList.getHead());
+		System.out.println("tail is " +rList.getTail());
+		System.out.println(" ");
+		System.out.println(rList);
+		rList.remove(r1);
+		System.out.println("After remove");
+		System.out.println(rList);
+		System.out.println("head is " +rList.getHead());
+		System.out.println("tail is " +rList.getTail());
+		
+		//=============Add Elements to the list================================
+		
+		
+		rList.prepend(new Rectangle());
+		rList.prepend(new Rectangle(14,5));
+		rList.prepend(r1);
+		Rectangle r2 = new Rectangle(10,15);
+		rList.append(r2); 
+		rList.append(new Rectangle(102,115));
+		rList.append(new Rectangle(12,13));
+		rList.append(new Rectangle(1,1));
+		Rectangle r3 = new Rectangle(100,155);
+		rList.append(r3);
+		
+		//=================Remove last element===========================================
+		System.out.println("---------------------------------------------------");
+		System.out.println("Before remove");
+		System.out.println(rList);
+		System.out.println("Head item "+rList.getHead());
+		System.out.println("tail is " +rList.getTail());
+		rList.remove(r3);
+		System.out.println(" ");
+		System.out.println("After remove");
+		System.out.println(rList);
+		System.out.println("Head item "+rList.getHead());
+		System.out.println("tail is " +rList.getTail());
+		System.out.println("-----------------------------------------------------------");
+		
+		//=================Remove First element===========================================
+		System.out.println("Before remove");
+		System.out.println("head is " +rList.getHead());
+		System.out.println("tail is " +rList.getTail());
+		System.out.println(rList);
+		rList.remove(r1);
+		System.out.println(" ");
+		System.out.println("After remove");
+		System.out.println(rList);
+		System.out.println("head is " +rList.getHead());
+		System.out.println("tail is " +rList.getTail());
+		System.out.println("-----------------------------------------------------------");
+		//===================Remove Middle Element==========================
+		
+			System.out.println("Before remove");
+		System.out.println("head is " +rList.getHead());
+		System.out.println("tail is " +rList.getTail());
+		System.out.println(rList);
+		rList.remove(r2);
+		System.out.println(" ");
+		System.out.println("After remove");
+		System.out.println(rList);
+		System.out.println("head is " +rList.getHead());
+		System.out.println("tail is " +rList.getTail());
+		System.out.println("-----------------------------------------------------------");
+		//=============================================
+	}
+}
